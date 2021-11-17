@@ -9,7 +9,7 @@ This sample project shows how to use Slack built-in functions.
 Create a new project using this repo as a template.
 
 ```bash
-slack create -t slackapi/future-built-in-functions
+slack create -t slackapi/deno-built-in-functions
 ```
 
 ## Running it locally
