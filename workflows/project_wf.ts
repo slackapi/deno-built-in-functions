@@ -4,17 +4,20 @@ export const NewProjWorkflow = DefineWorkflow("new_channel", {
   title: "Create new project",
   description: "Create a new project channel from a message.",
   input_parameters: {
-    projtitle: {
-      type: Schema.types.string,
-      description: "New channel name. All lowercase, no spaces.",
-    },
-    purpose: {
-      type: Schema.types.string,
-      description: "Write a short description about your project",
-    },
-    user: {
-      type: Schema.slack.types.user_id,
-      description: "Invite yourself or another user to the project channel",
+    required: ["projtitle", "purpose", "user"],
+    properties: {
+      projtitle: {
+        type: Schema.types.string,
+        description: "New channel name. All lowercase, no spaces.",
+      },
+      purpose: {
+        type: Schema.types.string,
+        description: "Write a short description about your project",
+      },
+      user: {
+        type: Schema.slack.types.user_id,
+        description: "Invite yourself or another user to the project channel",
+      },
     },
   },
 });
