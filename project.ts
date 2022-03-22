@@ -1,5 +1,5 @@
 import { Project } from "slack-cloud-sdk/mod.ts";
-import { NewProjectShortcut } from "./triggers/new_channel_shortcut.ts";
+import { NewProjectShortcut } from "./triggers/new_project_shortcut.ts";
 
 Project({
   name: "Project Organizer",
