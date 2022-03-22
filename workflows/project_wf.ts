@@ -1,6 +1,6 @@
 import { DefineWorkflow, Schema } from "slack-cloud-sdk/mod.ts";
 
-export const NewProjWorkflow = DefineWorkflow("new_channel", {
+export const NewProjWorkflow = DefineWorkflow("new_project", {
   title: "Create new project",
   description: "Create a new project channel from a message.",
   input_parameters: {
